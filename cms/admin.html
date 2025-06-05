@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustRobots CMS - Administration</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Login Modal -->
+    <div id="login-modal" class="admin-modal">
+        <div class="admin-modal-content" style="max-width: 400px;">
+            <div class="admin-modal-header">
+                <h2>JustRobots CMS - Connexion</h2>
+            </div>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" placeholder="Nom d'utilisateur">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" placeholder="Mot de passe">
+                </div>
+                <div id="login-error" class="message message-error" style="display: none;"></div>
+                <div class="form-actions">
+                    <button class="btn btn-primary" id="login-button">Connexion</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>JustRobots CMS - Administration</h1>
+            <div class="language-selector">
+                <span class="globe-icon"><i class="fas fa-globe"></i></span>
+                <select id="admin-language-selector">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="admin-content">
+            <div class="admin-tabs">
+                <div class="admin-tab active" data-tab="general">Général</div>
+                <div class="admin-tab" data-tab="products">Produits</div>
+                <div class="admin-tab" data-tab="content">Contenu</div>
+                <div class="admin-tab" data-tab="settings">Paramètres</div>
+            </div>
+
+            <div class="admin-tab-content active" id="tab-general">
+                <h2>Paramètres généraux</h2>
+                
+                <div class="edit-section">
+                    <h3>Informations du site</h3>
+                    <div class="form-group">
+                        <label for="site-title">Titre du site</label>
+                        <input type="text" id="site-title" class="translatable" data-path="site.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-title">Titre principal</label>
+                        <input type="text" id="hero-title" class="translatable" data-path="site.hero.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-subtitle">Sous-titre principal</label>
+                        <textarea id="hero-subtitle" class="translatable" data-path="site.hero.subtitle"></textarea>
+                    </div>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Statistiques</h3>
+                    <div class="form-group">
+                        <label for="stats-robots">Statistique 1</label>
+                        <input type="text" id="stats-robots" class="translatable" data-path="site.stats.robots">
+                    </div>
+                    <div class="form-group">
+                        <label for="stats-experience">Statistique 2</label>
+                        <input type="text" id="stats-experience" class="translatable" data-path="site.stats.experience">
+                    </div>
+                    <div class="form-group">
+                        <label for="stats-autonomy">Statistique 3</label>
+                        <input type="text" id="stats-autonomy" class="translatable" data-path="site.stats.autonomy">
+                    </div>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Boutons d'action</h3>
+                    <div class="form-group">
+                        <label for="button-discover">Bouton Découvrir</label>
+                        <input type="text" id="button-discover" class="translatable" data-path="site.buttons.discover">
+                    </div>
+                    <div class="form-group">
+                        <label for="button-contact">Bouton Contact</label>
+                        <input type="text" id="button-contact" class="translatable" data-path="site.buttons.contact">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-secondary" id="cancel-general">Annuler</button>
+                    <button class="btn btn-primary" id="save-general">Sauvegarder</button>
+                </div>
+            </div>
+
+            <div class="admin-tab-content" id="tab-products">
+                <h2>Gestion des produits</h2>
+                
+                <div class="products-list-container">
+                    <div class="products-controls">
+                        <button class="btn btn-primary" id="add-category">Ajouter une catégorie</button>
+                    </div>
+                    
+                    <div id="products-categories">
+                        <!-- Les catégories de produits seront générées ici dynamiquement -->
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-secondary" id="cancel-products">Annuler</button>
+                    <button class="btn btn-primary" id="save-products">Sauvegarder</button>
+                </div>
+            </div>
+
+            <div class="admin-tab-content" id="tab-content">
+                <h2>Gestion du contenu</h2>
+                
+                <div class="edit-section">
+                    <h3>Section Mission</h3>
+                    <div class="form-group">
+                        <label for="mission-title">Titre</label>
+                        <input type="text" id="mission-title" class="translatable" data-path="mission.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="mission-subtitle">Sous-titre</label>
+                        <textarea id="mission-subtitle" class="translatable" data-path="mission.subtitle"></textarea>
+                    </div>
+                    
+                    <h4>Cartes</h4>
+                    <div id="mission-cards">
+                        <!-- Les cartes de mission seront générées ici dynamiquement -->
+                    </div>
+                    <button class="btn btn-secondary" id="add-mission-card">Ajouter une carte</button>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Section Technologie</h3>
+                    <div class="form-group">
+                        <label for="technology-title">Titre</label>
+                        <input type="text" id="technology-title" class="translatable" data-path="technology.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="technology-subtitle">Sous-titre</label>
+                        <textarea id="technology-subtitle" class="translatable" data-path="technology.subtitle"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="technology-description">Description</label>
+                        <textarea id="technology-description" class="translatable" data-path="technology.description"></textarea>
+                    </div>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Section Contact</h3>
+                    <div class="form-group">
+                        <label for="contact-title">Titre</label>
+                        <input type="text" id="contact-title" class="translatable" data-path="contact.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subtitle">Sous-titre</label>
+                        <textarea id="contact-subtitle" class="translatable" data-path="contact.subtitle"></textarea>
+                    </div>
+                    
+                    <h4>Informations de contact</h4>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" class="translatable" data-path="contact.info.email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Téléphone</label>
+                        <input type="text" id="contact-phone" class="translatable" data-path="contact.info.phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-address">Adresse</label>
+                        <input type="text" id="contact-address" class="translatable" data-path="contact.info.address">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-secondary" id="cancel-content">Annuler</button>
+                    <button class="btn btn-primary" id="save-content">Sauvegarder</button>
+                </div>
+            </div>
+
+            <div class="admin-tab-content" id="tab-settings">
+                <h2>Paramètres du CMS</h2>
+                
+                <div class="edit-section">
+                    <h3>Gestion des langues</h3>
+                    <div class="form-group">
+                        <label for="default-language">Langue par défaut</label>
+                        <select id="default-language">
+                            <option value="fr">Français</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Sauvegardes</h3>
+                    <div class="form-group">
+                        <label for="backup-enabled">Activer les sauvegardes automatiques</label>
+                        <input type="checkbox" id="backup-enabled">
+                    </div>
+                    <div class="form-group">
+                        <label for="max-backups">Nombre maximum de sauvegardes</label>
+                        <input type="number" id="max-backups" min="1" max="50" value="10">
+                    </div>
+                    
+                    <h4>Sauvegardes disponibles</h4>
+                    <div id="backups-list">
+                        <!-- Les sauvegardes seront générées ici dynamiquement -->
+                    </div>
+                </div>
+
+                <div class="edit-section">
+                    <h3>Import / Export</h3>
+                    <div class="import-export-container">
+                        <div class="export-container">
+                            <h4>Exporter les données</h4>
+                            <p>Téléchargez toutes les données du site pour sauvegarde ou transfert.</p>
+                            <button class="btn btn-primary" id="export-data">Exporter</button>
+                        </div>
+                        <div class="import-container">
+                            <h4>Importer des données</h4>
+                            <p>Importez des données précédemment exportées.</p>
+                            <input type="file" id="import-file" class="file-input" accept=".json">
+                            <button class="btn btn-primary" id="import-data">Importer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-secondary" id="cancel-settings">Annuler</button>
+                    <button class="btn btn-primary" id="save-settings">Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="admin-footer">
+            <div class="admin-actions">
+                <button class="btn btn-secondary" id="logout-button">Déconnexion</button>
+                <button class="btn btn-primary" id="view-site-button">Voir le site</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
+

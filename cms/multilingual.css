@@ -1,0 +1,57 @@
+/* Styles pour le sélecteur de langue */
+.language-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.language-selector select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+.language-selector .globe-icon {
+  margin-right: 5px;
+  color: #0078d7;
+}
+
+/* Styles pour le bouton d'administration */
+.admin-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: #005fa3;
+  transform: scale(1.1);
+}
+
+.admin-button i {
+  font-size: 24px;
+}
+

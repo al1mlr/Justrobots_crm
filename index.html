@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site.title">JustRobots (v4) - Robots Autonomes Avancés</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cms/multilingual.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1 data-i18n="site.title">JustRobots</h1>
+                <span class="version">(v4)</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-i18n="site.nav.home">Accueil</a></li>
+                <li><a href="#mission" data-i18n="site.nav.mission">Mission</a></li>
+                <li><a href="#products" data-i18n="site.nav.products">Produits</a></li>
+                <li><a href="#technology" data-i18n="site.nav.technology">Technologie</a></li>
+                <li><a href="#contact" data-i18n="site.nav.contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="site.hero.title">L'Avenir de la Robotique Autonome</h1>
+                <p data-i18n="site.hero.subtitle">JustRobots conçoit et produit des robots autonomes avancés pour les marchés de la défense et de la sécurité, intégrant l'intelligence artificielle et les technologies de pointe.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3 data-i18n="site.stats.robots">8+</h3>
+                        <p data-i18n="site.stats.robots">Systèmes Robotiques</p>
+                    </div>
+                    <div class="stat">
+                        <h3 data-i18n="site.stats.experience">10</h3>
+                        <p data-i18n="site.stats.experience">Ans d'Expérience</p>
+                    </div>
+                    <div class="stat">
+                        <h3 data-i18n="site.stats.autonomy">100%</h3>
+                        <p data-i18n="site.stats.autonomy">Autonome</p>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary" data-i18n="site.buttons.discover">Découvrir nos Robots</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="site.buttons.contact">Nous Contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/drone_operator_mission.jpeg" alt="Opérateur de drone">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="mission.title">Notre Mission</h2>
+                <p data-i18n="mission.subtitle">Révolutionner les opérations de défense et de sécurité grâce à des robots autonomes intelligents</p>
+            </div>
+            
+            <div class="mission-cards" data-i18n-cards="mission.cards">
+                <!-- Les cartes seront générées dynamiquement par le JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="products.title">Notre Gamme de Robots</h2>
+                <p data-i18n="products.subtitle">Une famille complète de systèmes robotiques autonomes pour tous vos besoins opérationnels</p>
+            </div>
+            
+            <div class="products-container" data-i18n-products="products.categories">
+                <!-- Les produits seront générés dynamiquement par le JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="technology.title">Technologie Aimbot</h2>
+                <p data-i18n="technology.subtitle">Notre logiciel d'intelligence artificielle révolutionnaire au cœur de tous nos systèmes</p>
+            </div>
+            
+            <div class="technology-content">
+                <div class="technology-text">
+                    <p data-i18n="technology.description">Aimbot est notre logiciel propriétaire de vision par ordinateur qui utilise l'apprentissage profond pour révolutionner les capacités autonomes de nos robots.</p>
+                    
+                    <div class="technology-features" data-i18n-cards="technology.features">
+                        <!-- Les fonctionnalités seront générées dynamiquement par le JavaScript -->
+                    </div>
+                    
+                    <div class="technology-specs">
+                        <h4>Spécifications Techniques</h4>
+                        <ul data-i18n-list="technology.specs">
+                            <!-- Les spécifications seront générées dynamiquement par le JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="technology-image">
+                    <img src="images/tunnel_rat_terrain.jpeg" alt="Tunnel Rat en terrain rocheux">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="applications">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="applications.title">Applications</h2>
+                <p data-i18n="applications.subtitle">Nos robots servent dans de multiples domaines d'application</p>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3 data-i18n="applications.military.title">Applications Militaires</h3>
+                    <ul data-i18n-list="applications.military.items">
+                        <!-- Les éléments seront générés dynamiquement par le JavaScript -->
+                    </ul>
+                </div>
+                <div class="application-card">
+                    <h3 data-i18n="applications.civil.title">Applications Civiles</h3>
+                    <ul data-i18n-list="applications.civil.items">
+                        <!-- Les éléments seront générés dynamiquement par le JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact.title">Contactez-Nous</h2>
+                <p data-i18n="contact.subtitle">Discutons de vos besoins en robotique autonome</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.info.title">Informations de Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact.info.email">contact@justrobots.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span data-i18n="contact.info.phone">+33 1 23 45 67 89</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="contact.info.address">Paris, France</span>
+                    </div>
+                    
+                    <div class="expertise">
+                        <h4 data-i18n="contact.expertise.title">Domaines d'Expertise</h4>
+                        <ul data-i18n-list="contact.expertise.items">
+                            <!-- Les éléments seront générés dynamiquement par le JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label data-i18n="contact.form.name">Nom</label>
+                            <input type="text" required data-i18n-placeholder="contact.form.name">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.form.email">Email</label>
+                            <input type="email" required data-i18n-placeholder="contact.form.email">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.form.company">Entreprise</label>
+                            <input type="text" data-i18n-placeholder="contact.form.company">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.form.subject">Sujet</label>
+                            <select data-i18n-options="contact.form.subjects">
+                                <!-- Les options seront générées dynamiquement par le JavaScript -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="contact.form.message">Message</label>
+                            <textarea rows="5" required data-i18n-placeholder="contact.form.message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JustRobots</h3>
+                    <p data-i18n="footer.description">Spécialiste en robots autonomes avancés pour la défense et la sécurité.</p>
+                    <div class="social-links">
+                        <a href="#" data-i18n-title="footer.social.linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" data-i18n-title="footer.social.twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" data-i18n-title="footer.social.youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.sections.products.title">Produits</h4>
+                    <ul data-i18n-list="footer.sections.products.items">
+                        <!-- Les éléments seront générés dynamiquement par le JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.sections.technologies.title">Technologies</h4>
+                    <ul data-i18n-list="footer.sections.technologies.items">
+                        <!-- Les éléments seront générés dynamiquement par le JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-i18n="footer.sections.applications.title">Applications</h4>
+                    <ul data-i18n-list="footer.sections.applications.items">
+                        <!-- Les éléments seront générés dynamiquement par le JavaScript -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2025 JustRobots. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer.links.legal">Mentions légales</a>
+                    <a href="#" data-i18n="footer.links.privacy">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="cms/multilingual.js"></script>
+</body>
+</html>
+

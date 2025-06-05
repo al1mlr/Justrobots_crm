@@ -1,0 +1,332 @@
+{
+  "site": {
+    "title": "JustRobots (v4) - Advanced Autonomous Robots",
+    "hero": {
+      "title": "The Future of Autonomous Robotics",
+      "subtitle": "JustRobots designs and produces advanced autonomous robots for defense and security markets, integrating artificial intelligence and cutting-edge technologies."
+    },
+    "stats": {
+      "robots": "8+ Robotic Systems",
+      "experience": "10 Years Experience",
+      "autonomy": "100% Autonomous"
+    },
+    "buttons": {
+      "discover": "Discover our Robots",
+      "contact": "Contact Us"
+    },
+    "nav": {
+      "home": "Home",
+      "mission": "Mission",
+      "products": "Products",
+      "technology": "Technology",
+      "contact": "Contact"
+    }
+  },
+  "mission": {
+    "title": "Our Mission",
+    "subtitle": "Revolutionizing defense and security operations through intelligent autonomous robots",
+    "cards": [
+      {
+        "title": "Defense Market",
+        "description": "Advanced robotic solutions for armed forces, including reconnaissance, surveillance, and special operations."
+      },
+      {
+        "title": "Security Market",
+        "description": "Autonomous systems for civil security, perimeter surveillance, and critical infrastructure protection."
+      },
+      {
+        "title": "AI Innovation",
+        "description": "Integration of advanced artificial intelligence with our Aimbot software for unmatched autonomous capabilities."
+      }
+    ]
+  },
+  "products": {
+    "title": "Our Robot Range",
+    "subtitle": "A complete family of autonomous robotic systems for all your operational needs",
+    "categories": [
+      {
+        "title": "Tunnel Rat Series - UGV",
+        "products": [
+          {
+            "id": "tunnel_rat",
+            "title": "Tunnel Rat (TRat)",
+            "specs": "Weight: 5lb (2.3 kg) | Type: UGV",
+            "description": "Compact ground robot for reconnaissance, surveillance, and special operations. Can be equipped with explosives or Waldo systems.",
+            "features": ["ISR Camera", "Aimbot Compatible", "Modular", "Disposable"],
+            "image": "images/tunnel_rat_robot.jpeg",
+            "featured": true
+          },
+          {
+            "id": "super_rat",
+            "title": "Super Rat",
+            "specs": "Weight: 20lb (9 kg) | Type: Advanced UGV",
+            "description": "Reinforced version of the Tunnel Rat with extended capabilities and superior payload for complex missions.",
+            "features": ["Heavy Load", "Extended Autonomy", "Multi-mission"],
+            "image": "images/tunnel_rat_workshop.jpeg",
+            "featured": false
+          }
+        ]
+      },
+      {
+        "title": "Amphibious Systems",
+        "products": [
+          {
+            "id": "pivot",
+            "title": "Pivot MUGV",
+            "specs": "Type: Multi-Use Amphibious Ground Vehicle",
+            "description": "Versatile amphibious vehicle capable of land and water operations. Compatible with all Waldo systems.",
+            "features": ["Amphibious", "Multi-use", "Waldo Compatible", "Rough Terrain"],
+            "image": "images/pivot_robot.jpeg",
+            "featured": false
+          }
+        ]
+      },
+      {
+        "title": "Waldo Series - PTU (Pan-Tilt Units)",
+        "products": [
+          {
+            "id": "small_waldo",
+            "title": "Small Waldo (SWaldo)",
+            "specs": "Weight: <5lb (2.5 kg) | Pan: 360° | Pitch: 300°",
+            "description": "Compact PTU for ISR with mechanical zoom camera and IR/thermal sensors. Perfect for discreet mounting.",
+            "features": ["Compact", "Mechanical Zoom", "IR/Thermal"],
+            "image": "images/small_waldo.jpeg",
+            "featured": false
+          },
+          {
+            "id": "medium_waldo",
+            "title": "Medium Waldo (MWaldo)",
+            "specs": "Weight: 10-14lb (4.5-6.35 kg) | ISR+ Capable",
+            "description": "Intermediate PTU for advanced ISR systems and ISR+ applications. Compatible with light armament.",
+            "features": ["Advanced ISR", "Light Armament", "Dahlgren Compatible"],
+            "image": "images/medium_waldo_forest.jpeg",
+            "featured": false
+          },
+          {
+            "id": "large_waldo",
+            "title": "Large Waldo (LWaldo)",
+            "specs": "Weight: <18lb (8 kg) | Caliber: .308",
+            "description": "High-performance PTU for heavy armament and complete ISR systems. 24V magnetic encoder motors.",
+            "features": ["Heavy Armament", "High Power", "Complete ISR"],
+            "image": "images/tech_background_1.jpg",
+            "featured": false
+          }
+        ]
+      },
+      {
+        "title": "Aerial Systems",
+        "products": [
+          {
+            "id": "valkyrie",
+            "title": "Valkyrie",
+            "specs": "Size: 5\" (12 cm) | Type: Kamikaze Quadcopter",
+            "description": "Vision-guided kamikaze drone with integrated Aimbot system. Capable of autonomous reconnaissance and target engagement.",
+            "features": ["Vision Guided", "Integrated Aimbot", "Autonomous", "Swarm Capable"],
+            "image": "images/valkyrie_drone.png",
+            "featured": false
+          }
+        ]
+      },
+      {
+        "title": "Intelligent Systems",
+        "products": [
+          {
+            "id": "smart_mine",
+            "title": "Smart Mine",
+            "specs": "Type: UGV + Aimbot | Mode: Intelligent Kamikaze",
+            "description": "Mobile intelligent mine using Aimbot for autonomous identification and pursuit of specific targets.",
+            "features": ["Onboard AI", "Auto Recognition", "Active Pursuit"],
+            "image": "images/smart_mine_ugv.png",
+            "featured": false
+          }
+        ]
+      },
+      {
+        "title": "Other Systems",
+        "products": [
+          {
+            "id": "badger",
+            "title": "Badger",
+            "specs": "Type: All-Terrain Vehicle | Caliber: .308",
+            "description": "All-terrain vehicle with pan/tilt turret capable of carrying and firing weapons up to .308 caliber.",
+            "features": ["All-Terrain", "Armed Turret", ".308 Caliber"],
+            "image": "images/badger_vehicle.png",
+            "featured": false
+          },
+          {
+            "id": "icarus",
+            "title": "Icarus",
+            "specs": "Type: Laser-Guided Quadcopter",
+            "description": "Laser-guided kamikaze drone with anti-sniper maneuvers and autonomous search capabilities for marked targets.",
+            "features": ["Laser Guidance", "Anti-Sniper", "Auto Search"],
+            "image": "images/tech_background_2.jpg",
+            "featured": false
+          },
+          {
+            "id": "argos",
+            "title": "Argos",
+            "specs": "Type: Laser Aimbot System",
+            "description": "Version of Aimbot using a quadrant detector for laser guidance instead of the traditional vision system.",
+            "features": ["Quadrant Detector", "Laser Guidance", "Precision+"],
+            "image": "images/tech_background_3.jpg",
+            "featured": false
+          }
+        ]
+      }
+    ]
+  },
+  "technology": {
+    "title": "Aimbot Technology",
+    "subtitle": "Our revolutionary artificial intelligence software at the heart of all our systems",
+    "description": "Aimbot is our proprietary computer vision software that uses deep learning to revolutionize the autonomous capabilities of our robots.",
+    "features": [
+      {
+        "title": "1. Object Classification",
+        "description": "Automatic identification and classification of objects in the field of view in real-time."
+      },
+      {
+        "title": "2. Target Tracking",
+        "description": "Autonomous and continuous tracking of selected objects with trajectory prediction."
+      },
+      {
+        "title": "3. Specialized Search",
+        "description": "Active search for specific target classes according to mission parameters."
+      }
+    ],
+    "specs": [
+      "Platform: Raspberry Pi 4/5 + TPU",
+      "Gimbal: 3 motors 30g, platform <250g",
+      "Applications: Valkyrie, Icarus, Smart Mine, PTUs",
+      "Modes: Autonomous, Semi-autonomous, Teleoperated"
+    ],
+    "image": "images/tunnel_rat_terrain.jpeg"
+  },
+  "applications": {
+    "title": "Applications",
+    "subtitle": "Our robots serve in multiple application domains",
+    "military": {
+      "title": "Military Applications",
+      "items": [
+        "Intelligence, Surveillance, Reconnaissance (ISR)",
+        "Tunnel and trench operations",
+        "Guided kamikaze missions",
+        "Remote Weapon Systems (RWS)",
+        "Smart mines and ambushes",
+        "Amphibious operations"
+      ]
+    },
+    "civil": {
+      "title": "Civil Applications",
+      "items": [
+        "Perimeter surveillance",
+        "Delivery in difficult areas",
+        "Rescue missions",
+        "Operations in toxic environments",
+        "Infrastructure monitoring",
+        "Event security"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's discuss your autonomous robotics needs",
+    "info": {
+      "title": "Contact Information",
+      "email": "contact@justrobots.com",
+      "phone": "+33 1 23 45 67 89",
+      "address": "Paris, France"
+    },
+    "expertise": {
+      "title": "Areas of Expertise",
+      "items": [
+        "UGV/UAV autonomous robots",
+        "Embedded artificial intelligence",
+        "Computer vision systems",
+        "Defense and security solutions",
+        "Custom development"
+      ]
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "subjects": [
+        "Information request",
+        "Demo request",
+        "Custom development",
+        "Partnership",
+        "Technical support"
+      ]
+    }
+  },
+  "footer": {
+    "description": "Specialist in advanced autonomous robots for defense and security.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "youtube": "YouTube"
+    },
+    "sections": {
+      "products": {
+        "title": "Products",
+        "items": [
+          "Tunnel Rat Series",
+          "Waldo PTU Series",
+          "Valkyrie Drone",
+          "Smart Mine",
+          "Pivot MUGV"
+        ]
+      },
+      "technologies": {
+        "title": "Technologies",
+        "items": [
+          "Aimbot AI",
+          "Computer Vision",
+          "Autonomous Systems",
+          "Advanced PTUs"
+        ]
+      },
+      "applications": {
+        "title": "Applications",
+        "items": [
+          "Defense",
+          "Security",
+          "ISR",
+          "Surveillance"
+        ]
+      }
+    },
+    "copyright": "© 2025 JustRobots. All rights reserved.",
+    "links": {
+      "legal": "Legal notice",
+      "privacy": "Privacy policy"
+    }
+  },
+  "cms": {
+    "admin": {
+      "title": "JustRobots CMS Administration",
+      "login": "Login",
+      "logout": "Logout",
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "add": "Add",
+      "preview": "Preview",
+      "export": "Export",
+      "import": "Import",
+      "username": "Username",
+      "password": "Password"
+    },
+    "language": {
+      "title": "Language",
+      "fr": "Français",
+      "en": "English",
+      "toggle": "Change language"
+    }
+  }
+}
+
